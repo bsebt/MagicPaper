@@ -37,7 +37,7 @@ void loop() {
        {
           last=i;
           states[i]=true;
-          //Serial.println(i);
+          Serial.println(i);
           digitalWrite(LEDPINS[i],HIGH);
           delay(100);
        }
