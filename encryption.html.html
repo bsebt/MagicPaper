@@ -1,0 +1,59 @@
+<script>
+
+function encryption(s) {
+	var result="";
+
+	for(var i=0; i< s.length-1; i++)
+    {
+		var c1 = s[i];
+		var c2 = s[i+1];
+        var mix = "" + c1 + c2;
+        console.log(mix);
+
+		switch(mix){
+		case "01":
+		    result = result + 'z';
+            break; 
+		case "02":
+		    result = result.concat('c');
+            break;
+		case "03":
+            result = result.concat('v');
+            break;
+		case "10":
+            result = result.concat('b');
+            break;
+		case "12":
+            result = result + 'n';
+            break;
+		case "13":
+		    result = result.concat('m');
+            break;
+		case "20":
+		    result = result.concat('a');
+            break;
+		case "21":
+		    result = result.concat('s');
+            break;
+		case "23":
+		    result = result.concat('d');
+            break;
+        case "30":
+		    result = result.concat('f');
+            break;
+        case "31":
+		    result = result.concat('g');
+            break;
+        case "32":
+		    result = result.concat('h');
+            break;
+		}
+	}
+return result;
+console.log(result)
+}
+
+var test ="1231";
+console.log(encryption(test));
+
+</script>
