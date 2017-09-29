@@ -11,5 +11,5 @@ How does it work?
 
 Simple. You hover your hand over the capacitors we created in any combination you like and its recorded. Do the same hand gesture as before and it will be recognized.
 
-Built using RPi, and node.
+Built using Arduino, and node.
 Picture can be found here: https://devpost.com/dombercz
